@@ -1,8 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Resources for the project 
+
+- [Codemirorr](https://codemirror.net/)
+- [React Code Mirror2](https://www.npmjs.com/package/react-codemirror2)
+
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the front end as well as the backend server at the
+same time with hot reload for development.
+
 
 ### `npm start`
 
