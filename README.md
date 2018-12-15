@@ -1,5 +1,5 @@
 ## Project Kanband Board 
--[Project Board](https://github.com/LuisMiguelRodriguez/algoFlash/projects/1)
+- [Project Board](https://github.com/LuisMiguelRodriguez/algoFlash/projects/1)
 
 ## Resources for the project 
 - [Codemirorr](https://codemirror.net/)
