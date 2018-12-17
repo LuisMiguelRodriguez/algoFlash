@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { unlink } from 'fs';
 
 class Results extends Component {
 
@@ -17,7 +16,7 @@ class Results extends Component {
         const items = this.props.results.map((item, key) =>
             <ul>
                 <li key={item.id}>{item.title}</li>
-                <li className={item.status == 'passed' ? 'passed':'failed'} >{item.status}</li>
+                <li className={item.status === 'passed' ? 'passed':'failed'} >{item.status}</li>
             </ul>
         );
 
