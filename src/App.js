@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from './components/Code';
+import  Questions from "./components/Questions";
 import logo from './logo.svg';
 import './App.scss';
 
@@ -30,15 +31,10 @@ class App extends Component {
     return (
       <div className="App">
 
-      <Code />
         <header className="App-header">
           <img src={logo} className="code__header" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
 
-
-             <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
             <label htmlFor="name">Enter your name: </label>
             <input
               id="name"
@@ -60,6 +56,12 @@ class App extends Component {
             Learn React
           </a>
         </header>
+
+        <section className="coding-area">
+          <Code />
+          <Questions />
+        </section>
+
       </div>
     );
   }

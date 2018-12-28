@@ -1,19 +1,33 @@
 .App {
-  display:flex;
-  grid-template-columns: 1fr 1fr;
   margin:20px;
   padding:10px;
 }
+
+header {
+  text-align: center;
+}
+
 .code {
   background-color:black;
   border-radius: 10px;
   overflow: hidden;
   min-width: 600px;
+  width: 50%;
   
     &__header {
       margin-left:10px;
       padding:5px;
+      width: 20%;
     }
+}
 
+.coding-area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 
+.markdown-area {
+  background-color: #F8F8F8;
+  padding: 20px;
 }
