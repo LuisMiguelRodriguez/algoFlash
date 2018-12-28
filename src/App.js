@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 import Code from './components/Code';
+
 import  Questions from "./components/Questions";
 import logo from './logo.svg';
+import Results from './components/Results';
 import './App.scss';
 
 class App extends Component {
 
   constructor(props) {
+
     super(props);
+
     this.state = {
       name: '',
-      greeting: ''
+      greeting: '',
+      results: []
     };
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.resultHandler = this.resultHandler.bind(this);
   }
 
   handleChange(event) {
@@ -25,6 +32,15 @@ class App extends Component {
     fetch(`/api/greeting?name=${encodeURIComponent(this.state.name)}`)
       .then(response => response.json())
       .then(state => this.setState(state));
+  }
+
+  resultHandler(results){
+
+    results = results.obj.map(x => x);
+    console.log(results);
+    console.log('result handler triggered');
+    this.setState({ results })
+    
   }
 
   render() {
@@ -62,6 +78,8 @@ class App extends Component {
           <Questions />
         </section>
 
+        <Code resultHandler={this.resultHandler} something={{obj:'something'}}/>
+        <Results results={this.state.results}/>
       </div>
     );
   }
