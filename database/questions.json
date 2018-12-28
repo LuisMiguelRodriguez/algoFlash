@@ -1,0 +1,3 @@
+{
+    "questions": "We want to create a function that will add numbers together when called in succession.\n ``` \n add(1)(2);\n returns 3 \n ``` \n \n We also want to be able to continue to add numbers to our chain. \n \n ``` \n add(1)(2)(3); // 6 \n add(1)(2)(3)(4); // 10 \n add(1)(2)(3)(4)(5); // 15 \n \n and so on \n \n A single call should return the number passed in. \n \n ``` \n add(1); // 1 \n ``` \n \n We should be able to store the returned values and reuse them. \n  \n ``` \n var addTwo = add(2); \n addTwo; // 2 \n addTwo + 5; // 7 \n addTwo(3); // 5 \n addTwo(3)(5); // 10 \n ``` \n \n We can assume any number being passed in will be valid whole number."
+}

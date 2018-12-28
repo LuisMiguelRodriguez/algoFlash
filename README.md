@@ -1,8 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Resources for the project 
+## Project Kanband Board 
+- [Project Board](https://github.com/LuisMiguelRodriguez/algoFlash/projects/1)
 
+## Resources for the project 
 - [Codemirorr](https://codemirror.net/)
 - [React Code Mirror2](https://www.npmjs.com/package/react-codemirror2)
+- [Jest Docs](https://jestjs.io/docs/en/getting-started)
+
+### Possible Resources to use
+- [Jest Dev Server](https://www.npmjs.com/package/jest-dev-server)
+- [Jest Html Reporters](https://www.npmjs.com/package/jest-html-reporters)
+- [Jest Html Reporter](https://www.npmjs.com/package/jest-html-reporter)
+- [Jest JSON Reporter](https://www.npmjs.com/package/jest-json-reporter2)
+- [Jest HTML Reporter / Results Processor](https://www.npmjs.com/package/jest-stare)
+
 
 
 
